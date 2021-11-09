@@ -1,5 +1,5 @@
 html {
-  font-size: calc(1em + 10vmax);
+  font-size: calc(1em + 3vmax);
 }
 
 body {
@@ -17,12 +17,8 @@ figure {
   min-height: 100vh;
 }
 
-@media (orientation: portrait) {
+@media (orientation: landscape) {
   figure {
-    writing-mode: vertical-lr;
+    transform: rotate(-90deg);
   }
-}
-
-var {
-  font-style: inherit;
 }
