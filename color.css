@@ -1,31 +1,29 @@
 ::selection {
-  background: darkviolet;
-  color: gold;
+  background: gold;
+  color: indigo;
 }
 
 :root {
-  color: #200222;
-  background: skyblue;
+  color: #33113d;
+  background: deepskyblue;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background: deepskyblue;
-  }
-}
-
-@media (prefers-contrast: less) {
-  :root {
-    color: #33113d;
+    background: #33113d;
+    color: deepskyblue;
   }
 }
 
 :any-link {
-  color: #50a;
+  transition: 120ms;
+  color: inherit;
+}
+
+:not(:hover) {
   text-decoration-style: dotted;
 }
 
-mark {
-  color: #11111d;
-  background: mediumseagreen;
+:focus {
+  outline: thick dotted;
 }
